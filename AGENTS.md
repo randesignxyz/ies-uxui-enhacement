@@ -30,3 +30,6 @@ Keep card design consistent across modules: white background, subtle border, sha
 - Use Inter as the shared UI font, with Arial and sans-serif fallbacks. Preserve the established compact font sizes.
 
 - Status/filter tabs such as All / Not printed / Printed use a filled gold selected state with white text and a white count badge. Record tabs remain outlined; Details / Activity Log remain underlined.
+- Shared form-control standard: Ant Design ConfigProvider controlHeight 38px (small 30px, large 44px), 13px text, 8px corners, 11px input horizontal padding, 8px label gap, and 20px between form items. Inputs, Select, DatePicker, and InputNumber follow these tokens; textareas grow naturally. Avoid new per-screen control-size overrides.
+
+- Shared information cards must explicitly reset generic panel padding to zero at `.picking-detail .picking-information-card`; header and body own their padding. Use the same `.picking-page.picking-detail` wrapper in every module, including Master Data. Activity cards have 16px bottom spacing and balanced internal padding.

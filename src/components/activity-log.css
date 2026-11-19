@@ -4,3 +4,6 @@
 @media(max-width:550px){.record-activity-card{padding:20px 16px}}
 .record-activity-meta:last-child>span{color:#262626}
 .activity-remark-label{color:#999;font-weight:400}.activity-remark-value{color:#262626;font-weight:400}
+.picking-detail .record-activity-card{padding:24px;margin-bottom:16px;border:1px solid #e9e9e9;border-radius:10px;background:#fff}
+.record-activity-card .ant-timeline-item:last-child .ant-timeline-item-content{margin-bottom:0}
+@media(max-width:550px){.picking-detail .record-activity-card{padding:20px 16px}}
