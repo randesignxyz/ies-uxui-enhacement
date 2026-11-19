@@ -16,3 +16,17 @@ Use the Picking Slip list and detail layouts as the shared design standard for n
 - Reuse `ActivityLog` from `src/components/ActivityLog.tsx` for activity tabs: white card, gold timeline markers, and responsive columns for action, date/time, user, and description. Show newest events first and format dates in Asia/Phnom_Penh.
 
 - App-wide Ant Design primary color is gold `#b39b00`, matching Reload. Use the ConfigProvider token for primary buttons, links, focus states, and selections.
+- List/status and record tabs use a white background with primary gold text and border (outline treatment), rather than a filled gold background.
+- Exception: shared Details / Activity Log navigation retains the original gold underline style at compact height; outline styling applies to list/status and record tabs.
+
+## Shared detail component baseline
+
+Reuse `RecordDetailHeader`, `RecordInformationCard`, and `ActivityLog` for new record details. Details / Activity Log tabs use gold text and a gold underline, no outlined box, at 40px height with 13px text. Keep list/status and record tabs outlined. Information card headings use 12px vertical / 18px horizontal padding, Descriptions use 14px top / 18px horizontal padding, and cards have 16px spacing. Keep the title at 22px. Preserve these styles when adding fields or modules.
+
+## Card consistency
+
+Keep card design consistent across modules: white background, subtle border, shared corner radius, and balanced top/bottom spacing. Reuse shared card components and styles rather than introducing per-screen variations. Activity cards use equal 24px padding on desktop and 20px vertical / 16px horizontal on mobile; remove trailing timeline space instead of compensating with uneven padding. Keep information-card header/body spacing aligned with the shared detail baseline above.
+
+- Use Inter as the shared UI font, with Arial and sans-serif fallbacks. Preserve the established compact font sizes.
+
+- Status/filter tabs such as All / Not printed / Printed use a filled gold selected state with white text and a white count badge. Record tabs remain outlined; Details / Activity Log remain underlined.
