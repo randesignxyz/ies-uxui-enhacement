@@ -99,3 +99,4 @@
 .picking-comparison-card .ant-table-tbody>tr.comparison-row-added:hover>td{background:#effade!important}
 .picking-comparison-card .ant-table-tbody>tr.comparison-row-removed:hover>td{background:#ffe7e5!important}
 .picking-comparison-card .ant-table-tbody>tr.comparison-row-added>td,.picking-comparison-card .ant-table-tbody>tr.comparison-row-removed>td,.picking-comparison-card .ant-table-tbody>tr.comparison-row-added:hover>td,.picking-comparison-card .ant-table-tbody>tr.comparison-row-removed:hover>td{background:#fff!important}
+.picking-review-outline.ant-btn{height:32px;font-size:13px}
